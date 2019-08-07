@@ -10,7 +10,7 @@ services:
             - airflow_postgres_db:/var/lib/postgresql/dat
 
     webserver:
-        image: puckel/docker-airflow:1.10.4
+        image: dockeraf:1.10.4
         restart: always
         depends_on:
             - postgres
